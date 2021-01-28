@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MES.Service", "MES.Service\MES.Service.csproj", "{81EB8F27-104A-4F91-9F0A-F8EA736A0296}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Grpc.HttpApi", "Microsoft.AspNetCore.Grpc.HttpApi\Microsoft.AspNetCore.Grpc.HttpApi.csproj", "{30F3B094-0B71-43A4-89A5-FB471B583F7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Grpc.Swagger", "Microsoft.AspNetCore.Grpc.Swagger\Microsoft.AspNetCore.Grpc.Swagger.csproj", "{76F5BD9F-792C-4AA3-B9A1-A1D2A06524C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{3CFF1C26-EB7A-450F-BBFD-8E6A3373F24C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certs", "Certs", "{4671B635-018E-4180-9D60-1EB79ADCE102}"
+	ProjectSection(SolutionItems) = preProject
+		..\grpc-dotnet\testassets\Certs\InteropTests\ca.pem = ..\grpc-dotnet\testassets\Certs\InteropTests\ca.pem
+		..\grpc-dotnet\testassets\Certs\InteropTests\server1.key = ..\grpc-dotnet\testassets\Certs\InteropTests\server1.key
+		..\grpc-dotnet\testassets\Certs\InteropTests\server1.pem = ..\grpc-dotnet\testassets\Certs\InteropTests\server1.pem
+		..\grpc-dotnet\testassets\Certs\InteropTests\server1.pfx = ..\grpc-dotnet\testassets\Certs\InteropTests\server1.pfx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{018ECF18-7515-45D9-BEFB-45CE80EFEAC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{1846588D-740F-49C2-B35C-65DCBDCEBEC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MES.WinformClient", "MES.WinformClient\MES.WinformClient.csproj", "{39942DA4-7AA3-4256-B5A2-7C840ECD1B6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81EB8F27-104A-4F91-9F0A-F8EA736A0296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EB8F27-104A-4F91-9F0A-F8EA736A0296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EB8F27-104A-4F91-9F0A-F8EA736A0296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EB8F27-104A-4F91-9F0A-F8EA736A0296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F3B094-0B71-43A4-89A5-FB471B583F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F3B094-0B71-43A4-89A5-FB471B583F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F3B094-0B71-43A4-89A5-FB471B583F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F3B094-0B71-43A4-89A5-FB471B583F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F5BD9F-792C-4AA3-B9A1-A1D2A06524C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F5BD9F-792C-4AA3-B9A1-A1D2A06524C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F5BD9F-792C-4AA3-B9A1-A1D2A06524C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F5BD9F-792C-4AA3-B9A1-A1D2A06524C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39942DA4-7AA3-4256-B5A2-7C840ECD1B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39942DA4-7AA3-4256-B5A2-7C840ECD1B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39942DA4-7AA3-4256-B5A2-7C840ECD1B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39942DA4-7AA3-4256-B5A2-7C840ECD1B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81EB8F27-104A-4F91-9F0A-F8EA736A0296} = {018ECF18-7515-45D9-BEFB-45CE80EFEAC1}
+		{30F3B094-0B71-43A4-89A5-FB471B583F7F} = {3CFF1C26-EB7A-450F-BBFD-8E6A3373F24C}
+		{76F5BD9F-792C-4AA3-B9A1-A1D2A06524C7} = {3CFF1C26-EB7A-450F-BBFD-8E6A3373F24C}
+		{4671B635-018E-4180-9D60-1EB79ADCE102} = {3CFF1C26-EB7A-450F-BBFD-8E6A3373F24C}
+		{39942DA4-7AA3-4256-B5A2-7C840ECD1B6E} = {1846588D-740F-49C2-B35C-65DCBDCEBEC3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EBAE2BA-8263-4813-8ED7-D555665F6A94}
+	EndGlobalSection
+EndGlobal
