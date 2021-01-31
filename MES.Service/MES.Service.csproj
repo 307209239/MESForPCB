@@ -4,17 +4,24 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
+
   <ItemGroup>
-    <Protobuf Include="Protos\greeter.proto" GrpcServices="Server" />
+    <None Remove="Protos\user.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\user.proto" GrpcServices="Server" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.11" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.AspNetCore.Grpc.HttpApi\Microsoft.AspNetCore.Grpc.HttpApi.csproj" />
     <ProjectReference Include="..\Microsoft.AspNetCore.Grpc.Swagger\Microsoft.AspNetCore.Grpc.Swagger.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Common\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
 

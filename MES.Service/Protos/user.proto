@@ -1,0 +1,49 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "MES.Service";
+import "google/api/annotations.proto";
+package user;
+
+// The greeting service definition.
+service User {
+  // 登录
+  rpc Login (LoginModel) returns (UserModel){
+ option (google.api.http) = {
+      post: "/api/user/Login"
+      body: "*"
+     
+    };
+  };
+  // 退出
+  rpc Logout (LogoutModel) returns (UserModel){
+  option (google.api.http) = {
+      post: "/api/user/Logout"
+      body: "*"
+     
+    };
+  };
+}
+
+
+
+// The request message containing the user's name.
+message LoginModel {
+  //用户名称
+  string userName = 1;
+  string password=2;
+  string domain=3;
+}
+
+// The response message containing the greetings.
+message LogoutModel {
+  string userName = 1;
+  string password=2;
+  
+}
+//user model
+message UserModel{
+  string userName = 1;
+  string password=2;
+  string domain=3;
+  string token=4;
+}
